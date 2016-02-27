@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "CQFindCarVC.h"
+#import "CQForumVC.h"
+#import "CQNewsVC.h"
+#import "CQProfileVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    UITabBarController *mainTabBarController = [[UITabBarController alloc] init];
+    CQFindCarVC *findVC = [CQFindCarVC new];
+    CQForumVC *forumVC = [CQForumVC new];
+    CQNewsVC *newsVC = [CQNewsVC new];
+    CQProfileVC *profileVC = [CQProfileVC new];
+    NSArray *TBControllersArray = @[findVC, forumVC, newsVC, profileVC];
+    mainTabBarController.viewControllers = TBControllersArray;
+    
+    self.window.rootViewController = mainTabBarController;
+    
+    
     return YES;
 }
 
