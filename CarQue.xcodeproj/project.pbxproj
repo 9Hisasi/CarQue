@@ -37,12 +37,12 @@
 /* Begin PBXFileReference section */
 		3FAC29CB1C813D7B00CCBD9D /* CarQue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarQue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC29CF1C813D7B00CCBD9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FAC29D11C813D7B00CCBD9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3FAC29D21C813D7B00CCBD9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FAC29D41C813D7B00CCBD9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FAC29D51C813D7B00CCBD9D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FAC29D11C813D7B00CCBD9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		3FAC29D21C813D7B00CCBD9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		3FAC29D41C813D7B00CCBD9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		3FAC29D51C813D7B00CCBD9D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		3FAC29D81C813D7B00CCBD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3FAC29DA1C813D7B00CCBD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FAC29DA1C813D7B00CCBD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		3FAC29DD1C813D7B00CCBD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FAC29DF1C813D7B00CCBD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FAC29E41C813D7B00CCBD9D /* CarQueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarQueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +81,13 @@
 		3FAC29C21C813D7B00CCBD9D = {
 			isa = PBXGroup;
 			children = (
+				3FAC2A011C813DD200CCBD9D /* APP */,
+				3FAC2A021C813DD200CCBD9D /* FindCar */,
+				3FAC2A061C813DD200CCBD9D /* Forum */,
+				3FAC2A0A1C813DD200CCBD9D /* Main */,
+				3FAC2A0B1C813DD200CCBD9D /* News */,
+				3FAC2A0F1C813DD200CCBD9D /* Profile */,
+				3FAC2A101C813DD200CCBD9D /* Tools */,
 				3FAC29CD1C813D7B00CCBD9D /* CarQue */,
 				3FAC29E71C813D7B00CCBD9D /* CarQueTests */,
 				3FAC29F21C813D7B00CCBD9D /* CarQueUITests */,
@@ -101,14 +108,6 @@
 		3FAC29CD1C813D7B00CCBD9D /* CarQue */ = {
 			isa = PBXGroup;
 			children = (
-				3FAC29D11C813D7B00CCBD9D /* AppDelegate.h */,
-				3FAC29D21C813D7B00CCBD9D /* AppDelegate.m */,
-				3FAC29D41C813D7B00CCBD9D /* ViewController.h */,
-				3FAC29D51C813D7B00CCBD9D /* ViewController.m */,
-				3FAC29D71C813D7B00CCBD9D /* Main.storyboard */,
-				3FAC29DA1C813D7B00CCBD9D /* Assets.xcassets */,
-				3FAC29DC1C813D7B00CCBD9D /* LaunchScreen.storyboard */,
-				3FAC29DF1C813D7B00CCBD9D /* Info.plist */,
 				3FAC29CE1C813D7B00CCBD9D /* Supporting Files */,
 			);
 			path = CarQue;
@@ -117,6 +116,7 @@
 		3FAC29CE1C813D7B00CCBD9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FAC29DF1C813D7B00CCBD9D /* Info.plist */,
 				3FAC29CF1C813D7B00CCBD9D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +138,141 @@
 				3FAC29F51C813D7B00CCBD9D /* Info.plist */,
 			);
 			path = CarQueUITests;
+			sourceTree = "<group>";
+		};
+		3FAC2A011C813DD200CCBD9D /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC29D11C813D7B00CCBD9D /* AppDelegate.h */,
+				3FAC29D21C813D7B00CCBD9D /* AppDelegate.m */,
+				3FAC29D71C813D7B00CCBD9D /* Main.storyboard */,
+				3FAC29DA1C813D7B00CCBD9D /* Assets.xcassets */,
+				3FAC29DC1C813D7B00CCBD9D /* LaunchScreen.storyboard */,
+			);
+			name = APP;
+			path = CarQue/APP;
+			sourceTree = "<group>";
+		};
+		3FAC2A021C813DD200CCBD9D /* FindCar */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC2A031C813DD200CCBD9D /* Model */,
+				3FAC2A041C813DD200CCBD9D /* VC */,
+				3FAC2A051C813DD200CCBD9D /* View */,
+			);
+			name = FindCar;
+			path = CarQue/FindCar;
+			sourceTree = "<group>";
+		};
+		3FAC2A031C813DD200CCBD9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FAC2A041C813DD200CCBD9D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3FAC2A051C813DD200CCBD9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FAC2A061C813DD200CCBD9D /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC2A071C813DD200CCBD9D /* Model */,
+				3FAC2A081C813DD200CCBD9D /* VC */,
+				3FAC2A091C813DD200CCBD9D /* View */,
+			);
+			name = Forum;
+			path = CarQue/Forum;
+			sourceTree = "<group>";
+		};
+		3FAC2A071C813DD200CCBD9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FAC2A081C813DD200CCBD9D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3FAC2A091C813DD200CCBD9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FAC2A0A1C813DD200CCBD9D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC29D41C813D7B00CCBD9D /* ViewController.h */,
+				3FAC29D51C813D7B00CCBD9D /* ViewController.m */,
+			);
+			name = Main;
+			path = CarQue/Main;
+			sourceTree = "<group>";
+		};
+		3FAC2A0B1C813DD200CCBD9D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC2A0C1C813DD200CCBD9D /* Model */,
+				3FAC2A0D1C813DD200CCBD9D /* VC */,
+				3FAC2A0E1C813DD200CCBD9D /* View */,
+			);
+			name = News;
+			path = CarQue/News;
+			sourceTree = "<group>";
+		};
+		3FAC2A0C1C813DD200CCBD9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FAC2A0D1C813DD200CCBD9D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3FAC2A0E1C813DD200CCBD9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FAC2A0F1C813DD200CCBD9D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
+			path = CarQue/Profile;
+			sourceTree = "<group>";
+		};
+		3FAC2A101C813DD200CCBD9D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tools;
+			path = CarQue/Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +452,7 @@
 				3FAC29D81C813D7B00CCBD9D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3FAC29DC1C813D7B00CCBD9D /* LaunchScreen.storyboard */ = {
@@ -325,6 +461,7 @@
 				3FAC29DD1C813D7B00CCBD9D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -499,6 +636,7 @@
 				3FAC29FA1C813D7B00CCBD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAC29FB1C813D7B00CCBD9D /* Build configuration list for PBXNativeTarget "CarQueTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +645,7 @@
 				3FAC29FD1C813D7B00CCBD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAC29FE1C813D7B00CCBD9D /* Build configuration list for PBXNativeTarget "CarQueUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +654,7 @@
 				3FAC2A001C813D7B00CCBD9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
