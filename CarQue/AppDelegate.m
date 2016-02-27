@@ -37,7 +37,7 @@
     
     self.window.rootViewController = mainTabBarController;
     
-    
+    //test
     return YES;
 }
 
